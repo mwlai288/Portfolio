@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import Resume from '../../images/Resume.pdf';
+// import profilepic from '../../images/profpic.jpg';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -30,7 +32,7 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <AboutImg alt="profile picture" filename="profpic.jpg" />
               </div>
             </Fade>
           </Col>
@@ -54,7 +56,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href={Resume}
                     >
                       Resume
                     </a>
